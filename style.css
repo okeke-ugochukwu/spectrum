@@ -1,0 +1,144 @@
+*:focus {
+    outline: none;
+}
+.container {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 74%;
+    overflow: none;
+}
+.bounceBox {
+    width: 90%;
+    height: 60%;
+}
+.bounceMarg {
+    height: 100%;
+    display: flex;
+    place-content: center;
+}
+#b2, #b4, #b6, #b8, #b10, #b12 {
+    height: 50%;
+}
+.bounce {
+    background: linear-gradient(to bottom, deeppink, rgb(13, 13, 131));
+    position: relative;
+    top: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateY(-50%);
+    border-radius: 100px;
+    margin-right: 3px;
+    width: 25%;
+    height: 50%;
+    max-width: 150px;   
+}
+@keyframes length {
+    0% {
+        height: 50%;
+    }
+    50% {
+        height: 100%;
+    }
+    97% {
+        height: 40%;
+    }
+    100% {
+        height: 50%;
+    }
+}
+@keyframes length2 {
+    0% {
+        height: 50%;
+    }
+    50% {
+        height: 110%;
+    }
+    100% {
+        height: 50%;
+    }
+}
+.buttonBox {
+    width: 90%;
+    margin: auto;
+}
+.BtnMargBox {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    max-width: 200px;
+    place-content: center;
+    margin-bottom: 10px
+}
+.Btn {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    padding: 7px 30px 7px 30px;
+    background: none;
+    border: 1px solid green;
+    background: green;
+    color: white;
+    border-radius: 100px;
+    transition: 1s;
+}
+#Btn {
+    animation: shake 1s linear infinite;
+}
+@keyframes shake {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: 0;
+    } 
+    60% {
+        margin-left: -10px;
+    }
+    70% {
+        margin-left: -10px;
+    }
+    80% {
+        margin-left: 10px;
+    }
+    90% {
+        margin-left: -10px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+.Btn:hover { 
+    margin-top: -3px;
+    padding: 10px 40px 10px 40px;
+    box-shadow: 0px 10px 10px rgba(0, 128, 0, 0.671);
+}
+#Btn2 {
+    display: none;
+    margin: auto;
+    background: rgba(255, 16, 8, 0.897);
+    border: 1px solid rgba(255, 16, 8, 0.897);
+}
+#Btn2:hover {
+    padding: 10px 40px 10px 40px;
+    transition: .5s;
+    box-shadow: 0px 10px 10px rgba(255, 11, 3, 0.473);
+}
+.BtnMargBox2 {
+    display: flex;
+    place-content: center;
+}
+
+
+/*responsive queries*/
+@media only screen and (max-width: 400px), only screen and (max-device-width: 400px)  {
+    #b1, #b2, #b3, #b4, #b10, #b11, #b12, #b13 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px)  {
+     #b1, #b2, #b12, #b13 {
+        display: none;
+    }
+}
